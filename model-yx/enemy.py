@@ -13,20 +13,20 @@ class Enemy(Sprite):
   def __init__(self,ai_settings,screen):
 #    初始化并设置初始位置
     super(Enemy,self).__init__()
-    
+
       #初始化位置
     self.screen=screen
     self.ai_settings=ai_settings
-    
+
     #加载非常图像
     self.image=pygame.image.load('images/enemy.tga')
     self.rect=self.image.get_rect()
-    
-    
+
+
     #放在左上位置
     self.rect.x=self.rect.width
     self.rect.y=self.rect.height
-    
+
     #在属性center中储存小数值
     self.x =float(self.rect.x)
     

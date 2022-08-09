@@ -14,11 +14,10 @@ class Settings():
     self.screen_height=768
     #self.bg_color=(84,119,161)
     self.background_image=pygame.image.load('images/sky.jpg')
-    
+
     #设置飞船速度
     self.plane_speed_factor = 1.6
     self.plane_limit =3
-    
 #    子弹设置
     self.bullet_speed_factor =1
     self.bullet_width=300

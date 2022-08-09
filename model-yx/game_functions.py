@@ -177,8 +177,7 @@ def get_number_rows(ai_settings,plane_height,enemy_height):
 #  计算屏幕可容纳多少行敌人
   available_space_y=(ai_settings.screen_height - (3*enemy_height)
   -plane_height)
-  number_rows = int(available_space_y/(2*enemy_height))
-  return number_rows
+  return int(available_space_y/(2*enemy_height))
 
 
 def cerate_enemy(ai_settings,screen,enemys,enemy_number,row_number):
@@ -193,12 +192,11 @@ def cerate_enemy(ai_settings,screen,enemys,enemy_number,row_number):
 
 
 
-def get_number_enemys_x(ai_settings,enemy_width):   
+def get_number_enemys_x(ai_settings,enemy_width): 
 #     计算一行可容纳多少个敌人
-   #enemy =Enemy(ai_settings,screen)
+ #enemy =Enemy(ai_settings,screen)
   available_space_x=ai_settings.screen_width-2*enemy_width
-  number_enemys_x=int(available_space_x/(2*enemy_width))
-  return number_enemys_x
+  return int(available_space_x/(2*enemy_width))
           
              
 
