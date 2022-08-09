@@ -21,7 +21,7 @@ def run_game():
     plane=Plane(screen,ai_settings)
     bullets = Group()
     enemys=Group()
-    
+
     while True:
             screen.fill(bg_colorygame)
             pygame.display.flip()

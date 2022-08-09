@@ -11,19 +11,19 @@ class Plane():
     #初始化飞机位置
     self.screen=screen
     self.ai_settings=ai_settings
-    
+
     #加载非常图像
     self.image=pygame.image.load('images/plane.png')
     self.rect=self.image.get_rect()
     self.screen_rect=screen.get_rect()
-    
+
     #将飞机放在中间位置
     self.rect.centerx=self.screen_rect.centerx
     self.rect.bottom=self.screen_rect.bottom
-    
+
     #在属性center中储存小数值
     self.center =float(self.rect.centerx)
-    
+
     #移动标志
     self.moving_right=False
     self.moving_left=False
